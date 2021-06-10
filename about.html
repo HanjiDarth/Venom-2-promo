@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная - «Веном 2»</title>
+  <title>О фильме - «Веном 2»</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="css/by.css">
 </head>
-<body class="blood">
+<body class="primary-bg">
   <div class="container">
     <header class="header">
       <a href="/" class="logo-link">
@@ -39,29 +39,60 @@
       </nav>
       <!-- /.nav -->
     </header>
-    <div class="film">
-      <div class="film-text">
-        <span class="film-date">16 сентября 2021</span>
-        <img src="img/venom-2.svg" alt="logo: Venom 2" class="film-logo">
-        <p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из&nbsp;комиксов Marvel.</p>
+    <div class="content">
+      <div class="col">
+        <h2 class="content-title">О фильме</h2>
+        <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из&nbsp;комиксов Marvel.</p>
+        <h3 class="content-subtitle">В главных ролях</h3>
+        <ul class="list column-2">
+          <li class="list-item">Том Харди</li>
+          <li class="list-item">Мишель Уильямс</li>
+          <li class="list-item">Вуди Харрельсон</li>
+          <li class="list-item">Наоми Харрис</li>
+          <li class="list-item">Стивен Грэм</li>
+          <li class="list-item">Рейд Скотт</li>
+          <li class="list-item">Эд Кейр</li>
+          <li class="list-item">Шон Делани</li>
+          <li class="list-item">Уильям Барбо</li>
+          <li class="list-item">Пегги Лу</li>
+        </ul>
+        <div class="trailer">
+          <button class="play">
+            <img class="play-icon" src="img/play.svg" alt="icon: play">
+          </button>
+        </div>
+        <!-- /.trailer -->
       </div>
-      <!-- /.film-text -->
-      <div class="button-group">
-        <button class="button button-primary">
-          <img class="button-icon" src="img/play.svg" alt="icon: play" width="15">
-          <span class="button-text">смотреть трейлер</span>
-        </button>
-        <a class="button button-link" href="trailer.html">
-          <img class="button-icon" src="img/ticket.svg" alt="icon: ticket" width="15">
-          <span class="button-text">билеты на премьеру</span>
-        </a>
+      <!-- /.col -->
+      <div class="col">
+        <div class="poster-wrapper">
+          <img class="poster" src="img/poster.png" alt="photo: poster">
+          <div class="creators">
+            <h3 class="content-subtitle">Режиссёр</h3>
+            <ul class="list">
+              <li class="list-item">Энди Серкис</li>
+            </ul>
+            <h3 class="content-subtitle">Сценарий</h3>
+            <ul class="list">
+              <li class="list-item">Келли Марсел</li>
+              <li class="list-item">Том Харди</li>
+            </ul>
+            <h3 class="content-subtitle">Продюсеры</h3>
+            <ul class="list">
+              <li class="list-item">Ави Арад</li>
+              <li class="list-item">Том Харди</li>
+              <li class="list-item">Келли Марсел</li>
+            </ul>
+          </div>
+          <!-- /.creators -->
+        </div>
+        <!-- /.poster-wrapper -->
       </div>
-      <!-- /.button-group -->
+      <!-- /.col -->
     </div>
-    <!-- /.film -->
+    <!-- /.content -->
   </div>
   <!-- /.container -->
-  <img class="venom" src="img/venom.png" alt="photo: venom" height="800">
   
   
   <!-- /.block-about-me -->
