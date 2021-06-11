@@ -3,8 +3,17 @@ body {
   color: #ffffff;
 }
 .container {
-  max-width: 1140px;
-  margin: auto;
+  /* max-width: 1140px; */
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.venom {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  max-width: 728px;
+  width: 55%;
 }
 .header {
   display: flex;
@@ -15,6 +24,9 @@ body {
 .logo-link {
   display: inline-block;
   margin-right: 50px;
+}
+.humburger-menu-button {
+  display: none;
 }
 .nav-menu {
   list-style: none;
@@ -31,17 +43,20 @@ body {
 }
 .film-date {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 2%;
   font-size: 24px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
 }
 .film-description {
   max-width: 423px;
-  margin-top: 40px;
+  margin-top: 3%;
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.8);
+}
+.film-logo {
+  width: 70%;
 }
 .button {
   padding: 15px 30px;
@@ -68,15 +83,10 @@ body {
   color: #ffffff;
 }
 .button-group {
-  margin-top: 70px;
-}
-.venom {
-  position: absolute;
-  top: 12px;
-  right: 0;
+  margin-top: 5%;
 }
 .blood {
-  background: url("../img/blood.png") no-repeat top right,
+  background: url("../img/blood.png") no-repeat top right / 55%,
     #14131a url("../img/background.png") no-repeat center center / 100%;
 }
 .primary-bg {
@@ -171,4 +181,52 @@ body {
 }
 .poster-wrapper .list {
   margin: 0px 0px 20px;
+}
+@media (max-width: 768px) {
+  .blood {
+    background: #14131a;
+  }
+  .venom {
+    top: 15%;
+  }
+}
+@media (max-width: 576px) {
+  .venom {
+    width: 40%;
+    top: 20%;
+  }
+  .nav {
+    margin-left: auto;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .humburger-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background-color: #14131a;
+    cursor: pointer;
+  }
+  .humburger-menu-button-text {
+    margin-right: 11px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  .film-text {
+    text-align: center;
+  }
+  .film-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
