@@ -8,9 +8,16 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/humburger.js" defer></script>
 
   <link rel="stylesheet" href="css/by.css">
 </head>
@@ -25,12 +32,16 @@
           <span class="humburger-menu-button-text">Меню</span>
           <img src="img/humburger.svg" alt="icon: humburger menu" class="humburger-menu-icon">
         </button>
+        <button class="humburger-menu-button-close">
+          <span class="humburger-menu-button-close-text">Закрыть</span>
+          <img src="img/arrow.svg" alt="icon: arrow right" class="humburger-menu-icon-close">
+        </button>
         <ul class="nav-menu">
           <li class="nav-menu-item">
             <a class="nav-menu-link" href="about.html">О фильме</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-menu-link" href="trailer.html">Трейлер</a>
+            <a class="nav-menu-link" href="https://www.youtube.com/watch?v=Othd8W8o3t0">Трейлер</a>
           </li>
           <li class="nav-menu-item">
             <a class="nav-menu-link" href="actors.html">Актёры</a>
@@ -48,7 +59,7 @@
         <h2 class="content-title">О фильме</h2>
         <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из&nbsp;комиксов Marvel.</p>
         <h3 class="content-subtitle">В главных ролях</h3>
-        <ul class="list column-2 column-sm-1">
+        <ul class="list column-2">
           <li class="list-item">Том Харди</li>
           <li class="list-item">Мишель Уильямс</li>
           <li class="list-item">Вуди Харрельсон</li>
@@ -61,9 +72,9 @@
           <li class="list-item">Пегги Лу</li>
         </ul>
         <div class="trailer">
-          <button class="play">
+          <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="play">
             <img class="play-icon" src="img/play.svg" alt="icon: play">
-          </button>
+          </a>
         </div>
         <!-- /.trailer -->
       </div>
@@ -113,8 +124,9 @@
             <a href="https://www.w3.org/html/" class="by-tag">HTML</a>
             <a href="https://www.w3.org/Style/CSS/" class="by-tag">CSS</a>
             <a href="https://necolas.github.io/normalize.css/" class="by-tag">Normalize.css v8.0.1</a>
-            <!-- <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
-              class="by-tag">JavaScript</a> -->
+            <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+              class="by-tag">JavaScript</a>
+              <a href="https://fancyapps.com/fancybox/3/" class="by-tag">FancyBox v3.5.7</a>
             <a href="https://github.com/" class="by-tag">GitHub</a>
             <a href="https://www.figma.com/" class="by-tag">Figma</a>
           </div>
