@@ -1,6 +1,14 @@
 /* 
 block about me 
 */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex-grow: 1;
+}
 .container-by {
   width: 90%;
   padding-right: var(--bs-gutter-x, 0.75rem);
